@@ -1,0 +1,147 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Khand";
+}
+
+
+
+/* header for desktop */
+
+
+header{
+    border: 1px solid;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1vw;
+    background-color: #C9DABF;
+}
+
+
+header img{
+    width: 5vw;
+}
+
+header nav a{
+    font-size: 1.5vw;
+}
+
+#navigation{
+    width: 75vw;
+    display: flex;
+}
+
+#navigation nav{
+    width: inherit;
+    display: flex;
+    justify-content: space-between;
+}
+
+#navigation a{
+
+    text-decoration: none;
+    color: black;
+
+    padding: 0 5vw;
+    
+    
+}
+
+#navigation a{
+
+    position: relative;
+    width: max-content;
+}
+
+#navigation a::after{
+    content: '';
+    background:linear-gradient(to right, black, red);
+    position: absolute;
+    height: 5px;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    border-radius: 10px;
+    transition: 100ms;
+}
+
+#navigation a:hover::after{
+    width:5%;
+}
+
+#dropdown{
+    position: relative;
+    display: inline-block;
+}
+/* #contentDrop{
+    display: none;
+    position: absolute;
+    background-color: white;
+    border-radius: 5px;
+} */
+
+#contentDrop a{
+    display: block;
+}
+
+#contentDrop {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top:8.5vh;
+    border-radius: 5px;
+    grid-template-columns: 50% 50%;
+    width: max-content;
+    grid-gap: 0 0.5vw;
+    background: transparent;
+}
+
+.dropBtn{
+    padding-top: 0.5vw;
+    padding-bottom: 0.5vw;
+    width: 12vw;
+    border-radius: 5px;
+    position: relative;
+    text-align: center;
+    font-family: "Khand";
+    font-size: 1rem;
+    background-color: rgba(255, 255, 255, 0.418);
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropBtn::after{
+
+    content: '';
+    background:linear-gradient(to right, black, red);
+    position: absolute;
+    height: 5px;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    border-radius: 10px;
+    transition: 100ms;
+    
+
+}
+
+.dropBtn:hover::after{
+    width: 5%;
+}
+.dropBtn:hover{
+    background-color: hsl(0, 0%, 98%);
+}
+
+.hidden{
+    background: transparent;
+    border: none;
+}
+
+
+/* header for desktop end */
+
+
+
+
+
+
