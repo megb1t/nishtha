@@ -27,6 +27,12 @@ header nav a{
     font-size: 1.5vw;
 }
 
+#ezNavSect{
+    display: none;
+    border: 1px solid;
+    background-color: hsl(6, 9%, 46%);
+}
+
 #navigation{
     width: 75vw;
     display: flex;
@@ -70,42 +76,30 @@ header nav a{
     width:5%;
 }
 
-#dropdown{
-    position: relative;
-    display: inline-block;
-}
-/* #contentDrop{
-    display: none;
-    position: absolute;
-    background-color: white;
-    border-radius: 5px;
-} */
 
-#contentDrop a{
-    display: block;
-}
 
 #contentDrop {
-    display: none;
-    position: absolute;
-    background-color: white;
-    top:8.5vh;
-    border-radius: 5px;
-    grid-template-columns: 50% 50%;
-    width: max-content;
-    grid-gap: 0 0.5vw;
+    margin: 0 0.5vw 0 0.5vw;
+    width: inherit;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 0.5vw;
+    justify-content: space-around;
     background: transparent;
 }
 
+footer{
+    text-align: center;
+}
+
 .dropBtn{
-    padding-top: 0.5vw;
-    padding-bottom: 0.5vw;
-    width: 12vw;
-    border-radius: 5px;
     position: relative;
     text-align: center;
+    overflow: hidden;
     font-family: "Khand";
     font-size: 1rem;
+    font-weight: 600;
+    padding: 0.5vw;
     background-color: rgba(255, 255, 255, 0.418);
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
@@ -119,17 +113,18 @@ header nav a{
     width: 100%;
     left: 0;
     bottom: 0;
-    border-radius: 10px;
     transition: 100ms;
     
 
 }
 
+
+
 .dropBtn:hover::after{
     width: 5%;
 }
 .dropBtn:hover{
-    background-color: hsl(0, 0%, 98%);
+    background-color: #C9DABF;
 }
 
 .hidden{
@@ -141,7 +136,115 @@ header nav a{
 /* header for desktop end */
 
 
+/* header for phone start */
+
+@media (max-width:768px){
+    #navigation{
+        display: none;
+    }
+
+    header{
+        justify-content: space-between;
+    }
+
+    h1{
+        font-size: 1.2rem;
+    }
+
+    #threeLines {
+        font-size: 1.5rem;
+    }
+
+    header img{
+        width: 10vw; 
+    }
+
+    #phoneNavThree a{
+       text-decoration: none;
+       color: black;
+    }
+
+    #phoneNavThree{
+        border: 1px solid;
+        position: fixed;
+        height: 90vh;
+        width:0vw;
+        background-color: #C9DABF;
+        z-index: 1;
+        top:0;
+        left:0;
+        color:white;
+        overflow-x: hidden;
+        overflow-y: scroll;
+        transition: 0.5s;
+
+    }
+
+    #phoneNavThree a{
+        -webkit-tap-highlight-color: transparent;
+        display: block;
+        position: relative;
+        padding: 4vw 25vw 2vw 5vw;
+        transition: 0.3s;
+        font-size: 1rem;
+    }
+
+    #phoneNavThree a::after{
+        content: '';
+        background:linear-gradient(to right, black, red);
+        position: absolute;
+        height: 5px;
+        width: 100%;
+        left: 0;
+        bottom: 0;
+        transition: 100ms;
+    }
+
+    #phoneNavThree a:hover::after{
+        width: 5%;
+    }
+   
+
+
+
+    #closingPhone{
+        color: black;
+        font-size: 1.5rem;
+    }
+
+    #closingPhone::after{
+        display: none;
+    }
+
+    #contentDropPhone{
+        padding-top: 5vw;
+        display: none;
+    }
+
+    .dropBtnPhone{
+        border:none;
+        font-family: "Khand";
+        padding: 2vw 25vw 2vw 5vw;
+        font-size: 1rem;
+        width:40vw;
+        text-align: left;
+        background: transparent;
+    }
 
 
 
 
+
+}
+
+
+@media (min-width:768px){
+    #phoneNavThree{
+        display: none;
+    }
+
+    #threeLines{
+        display: none;
+    }
+
+}
