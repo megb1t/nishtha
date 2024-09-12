@@ -27,3 +27,23 @@ const phoneOpenNav = () =>{
 const phoneCloseNav = () =>{
     phoneButton.style.width="0"
 }
+
+
+
+
+// socials
+
+const socialsFirst = document.getElementById('socialLogos');
+const socialsSecond = document.getElementById('socialLogosSecond');
+const tempText = document.getElementById('optionalText');
+
+const showSocials = () =>{
+    socialsFirst.style.display="none"
+    socialsSecond.style.display="flex"
+    tempText.style.display="none"
+}
+const showSocialsTwo = () =>{
+    socialsFirst.style.display="flex"
+    socialsSecond.style.display="none"
+    tempText.style.display="none"
+}

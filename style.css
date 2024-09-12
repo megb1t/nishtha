@@ -10,12 +10,12 @@ body{
 
 
 header{
-    border: 1px solid;
+  
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0 1vw;
-    background-color: #C9DABF;
+    background-color: rgb(191, 218, 216);
 }
 
 
