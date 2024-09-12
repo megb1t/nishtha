@@ -1,0 +1,127 @@
+main{
+    margin: 0.2vw 0 0 0;
+    background:url(images/119104210865.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+#connectText{
+    margin: 0;
+    padding: 0;
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+#optionalText{
+    font-size: 1rem;
+    text-align: center;
+}
+
+#connectAdmin{
+    height: 100vh;;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+
+#adminOne:hover{
+    transform: scale(1.05);
+    transition: 0.5s;
+}
+#adminTwo:hover{
+    transform: scale(1.05);
+    transition: 0.5s;
+}
+
+.adminImg{
+    cursor: pointer;
+    width: 20vw;
+    border-radius: 1vw;
+}
+
+.socialLogo{
+    width: 5vw;
+
+}
+
+#instagram{
+    width: 4.6vw;
+}
+
+
+#textConnect{
+    
+    display: flex;
+    flex-direction: column;
+}
+
+#socialLogos{
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+}
+#socialLogosSecond{
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+#socialLogos:has(img:hover) img:not(:hover){
+    opacity: 0.5;
+    scale:0.8;
+}
+#socialLogosSecond:has(img:hover) img:not(:hover){
+    opacity: 0.5;
+    scale:0.8;
+}
+
+#textsforaud{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+
+@media (max-width:500px){
+
+    #connectText{
+        margin: 0;
+        padding: 0;
+        font-size: 1rem;
+        font-weight: 600;
+    }
+    
+    #optionalText{
+        font-size: 0.8rem;
+    }
+
+    #adminTwo{
+        margin: 0 0 70vw 10vw;
+    }
+    #adminOne{
+        margin: 70vw 5vw 0 0;
+    }
+    .adminImg{
+        width: 30vw;
+    }
+
+}
+
+@media (min-width:500px) and (max-width:1024px){
+
+    #connectText{
+        margin: 0;
+        padding: 0;
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+    
+    #optionalText{
+        font-size: 1rem;
+    }
+
+}
