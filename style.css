@@ -29,8 +29,8 @@ header nav a{
 
 #ezNavSect{
     display: none;
-    border: 1px solid;
-    background-color: hsl(6, 9%, 46%);
+    /* background-color: hsl(6, 9%, 46%); */
+    background-color: rgb(191, 218, 216);
 }
 
 #navigation{
@@ -62,7 +62,8 @@ header nav a{
 
 #navigation a::after{
     content: '';
-    background:linear-gradient(to right, black, red);
+    /* background:linear-gradient(to right, black, red); */
+    background:linear-gradient(to right, #78c8a9, #788266);
     position: absolute;
     height: 5px;
     width: 100%;
@@ -107,7 +108,7 @@ footer{
 .dropBtn::after{
 
     content: '';
-    background:linear-gradient(to right, black, red);
+    background:linear-gradient(to right, #78c8a9, #788266);
     position: absolute;
     height: 5px;
     width: 100%;
@@ -170,7 +171,7 @@ footer{
         position: fixed;
         height: 90vh;
         width:0;
-        background-color: #C9DABF;
+        background-color: rgb(191, 218, 216);
         z-index: 1;
         top:0;
         left:0;
@@ -193,7 +194,7 @@ footer{
 
     #phoneNavThree a::after{
         content: '';
-        background:linear-gradient(to right, black, red);
+        background:linear-gradient(to right, #78c8a9, #788266);
         position: absolute;
         height: 5px;
         width: 100%;
