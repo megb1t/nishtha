@@ -36,11 +36,11 @@ main{
 
 .jyotiButton:active{
     
-    background-color: hsl(0, 6%, 19%);
+    background-color: hsl(0, 6%, 66%);
 }
 .jyotiButton:hover{
     
-    background-color: hsl(0, 4%, 11%);
+    background-color: hsla(0, 9%, 67%, 0.827);
 }
 
 .jyotiImage{
