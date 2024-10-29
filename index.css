@@ -3,6 +3,14 @@ main{
     height: fit-content;
 }
 
+#header-img{
+    cursor: pointer;
+}
+
+#deskTop{
+    cursor: pointer;
+}
+
 
 .jyoti{
   
