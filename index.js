@@ -3,6 +3,8 @@ const phoneNav = document.getElementById('contentDropPhone');
 
 const phoneButton = document.getElementById('phoneNavThree')
 
+
+
 const displayDrop = () =>{
     button.style.display="grid"
 
@@ -28,6 +30,10 @@ const phoneCloseNav = () =>{
     phoneButton.style.width="0"
 }
 
+
+const openHome = () =>{
+    window.location.href='index.html';
+}
 
 
 
